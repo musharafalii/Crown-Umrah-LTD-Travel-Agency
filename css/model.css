@@ -1,0 +1,100 @@
+/* Modal Styles */
+.custom-modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 30px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 400px;
+    position: relative;
+    animation: modal-appear 0.3s ease-in-out;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  .close {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 24px;
+    color: #888;
+    cursor: pointer;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #333;
+  }
+  
+  /* Form Styles */
+  form {
+    margin-top: 20px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  textarea {
+    resize: vertical;
+    height: 100px;
+  }
+  
+  button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: calc(100% - 20px);
+    font-size: 16px;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Loading Animation Styles */
+  .loading-animation {
+    display: none;
+    width: 40px;
+    height: 40px;
+    border: 5px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 5px solid #3498db;
+    animation: spin 1s linear infinite;
+    position: absolute;
+    left: calc(50% - 20px);
+    top: calc(50% - 20px);
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  @keyframes modal-appear {
+    from { opacity: 0; top: -50px; }
+    to { opacity: 1; top: 0; }
+  }
+  
