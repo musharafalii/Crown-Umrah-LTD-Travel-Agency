@@ -2914,6 +2914,7 @@ header .custom_navigation_bar ul li.mega-drop-down .megamenuDetails .holiday img
     width: 100%;
     float: left;
     position: relative;
+
 }
 
 .search_container .tab_full_container .tab-content .tab-pane .form-group label {
@@ -2965,6 +2966,19 @@ header .custom_navigation_bar ul li.mega-drop-down .megamenuDetails .holiday img
     font-size: 15px;
     border-radius: 0 !important;
 }
+
+.search_container .tab_full_container .tab-content .tab-pane .form-group span.icons {
+    position: absolute;
+    left: 9px;
+    bottom: 0;
+    font-size: 17px;
+    color: #061d47;
+    line-height: 34px;
+    height: 63px;
+    font-size: 15px;
+    border-radius: 0 !important;
+}
+
 
 .search_container .tab_full_container .tab-content .tab-pane .form-group .form-control {
     height: 45px;
